@@ -1,6 +1,6 @@
 # CS114.L11.KHCL
 # MACHINE LEARNING REPOSITORY
-![](/Screenshots/photo_1.jpn)
+![Screenshot](photo_1.jpg)
 ## **N007**
 
 | Tên | MSSV | Role |
