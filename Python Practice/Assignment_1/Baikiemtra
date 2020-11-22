@@ -1,0 +1,16 @@
+n,k,p,q = int(input()),int(input()),int(input()),int(input())
+s= 2*(p-1)+q
+if k<s :
+  dem = s-k
+else:
+  dem = s+k
+if (dem<=0) or (dem>n):
+  print(-1)
+else:
+  if (dem % 2 == 0):
+    u= int(dem /2)
+    v= 2
+  else:
+    u = int((dem+1)/2)
+    v= 1
+  print(u,v)
