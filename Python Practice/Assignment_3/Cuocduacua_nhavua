@@ -1,0 +1,10 @@
+def whoWins(x, y, n):
+  minWhite = min(x - 1, y - 1)
+  minBlack = min(n - x, n - y)
+  if minWhite <= minBlack:
+    return "White"
+  return "Black"
+
+n = int(input())
+x, y = map(int, input().split())
+print(whoWins(x, y, n))
