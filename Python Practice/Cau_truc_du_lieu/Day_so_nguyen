@@ -1,0 +1,7 @@
+n = int(input())
+a = ''
+i= 0
+while i < 400:
+  a += str(i)
+  i = i + 1
+print(a[n])
