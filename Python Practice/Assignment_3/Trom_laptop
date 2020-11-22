@@ -1,0 +1,12 @@
+n = int(input())
+arr = list(map(int,input().strip().split()))[:n] 
+
+max = 0
+min = 100000000
+for i in arr:
+  if i > max:
+    max = i
+  if i < min:
+    min = i
+
+print(max - min - len(arr) + 1)
