@@ -1,0 +1,17 @@
+def check(s, t):
+  if len(s) != len(t):
+    return False
+  for i in s: 
+    if i in t: 
+      return True
+  return False
+
+n = int(input())
+for i in range(n):
+  s = input()
+  s1 = input()
+  if check(s, s1):
+    print("YES")
+  else:
+    print("NO")
+    
