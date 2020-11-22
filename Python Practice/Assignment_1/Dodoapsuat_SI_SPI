@@ -1,0 +1,5 @@
+from decimal import *
+getcontext().prec = 6
+a = float(input())
+B=Decimal(a*0.453592)/Decimal(2.54**2)
+print(B.normalize())
