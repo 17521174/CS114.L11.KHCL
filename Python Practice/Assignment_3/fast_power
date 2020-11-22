@@ -1,0 +1,10 @@
+m, n = map(int, input().split())
+def luy_thua(m, n):
+  if n == 1:
+    return m % 1000000007
+  if n % 2 == 1:
+    return (luy_thua(m, n // 2) * luy_thua(m, n // 2 + 1)) % 1000000007
+  return (luy_thua(m, n // 2) ** 2) % 1000000007
+
+print(luy_thua(m, n))
+  
