@@ -1,0 +1,12 @@
+online=dict()
+
+while True:
+  x= [int(x) for x in input().split()]
+  if 0==x[0]:
+    break
+  elif 1==x[0]:
+    online[x[1]]=1
+  elif 2==x[0]:
+    if online.get(x[1]) is None:
+      print(0)
+    else: print(1)
