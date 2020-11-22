@@ -1,0 +1,6 @@
+from decimal import Decimal,getcontext
+getcontext().prec = 6
+a=Decimal(input())
+B=Decimal(a-32)/Decimal(1.8)
+C=Decimal(B)+Decimal(273.15)
+print(B.normalize(),C.normalize())
