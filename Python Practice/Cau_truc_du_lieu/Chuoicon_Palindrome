@@ -1,0 +1,24 @@
+a = input()
+i = 0
+s = len(a)
+while i < len(a)-2:
+  if a[i] == a[int(i)+1] :
+    s = s + 1
+    r = 1
+    while r < int(len(a)/2):
+      if a[i-r] == a[i+1+r]:
+        s = s + 1
+      else:
+        break
+      r = r + 1
+  if a[i] == a[i +2]:
+    s = s + 1
+    r = 1
+    while r < int(len(a)/2)-1:
+      if a[i-r] == a[i+2+r]:
+        s = s + 1
+      else:
+        break
+      r = r + 1
+  i = i +1
+print(s)
