@@ -1,0 +1,11 @@
+a = int(input())
+k = len(str(a))
+sum = 0
+temp = a
+while(temp != 0):
+	sum = sum + ((temp % 10) ** k)
+	temp = temp // 10
+if sum == a:
+	print("True")
+else:
+	print("False")
