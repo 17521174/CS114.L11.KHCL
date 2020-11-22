@@ -1,0 +1,12 @@
+word = input()
+i = 0
+while word[i] != " ":
+  i = i + 1
+k = int(word[:i])
+t = int(word[i:])
+a = int(t/k)
+if (a % 2 == 0 ):
+  kq = t - a*k 
+else:
+  kq = k-t+a*k
+print(kq)
