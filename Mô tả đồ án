@@ -1,0 +1,22 @@
+1. Mô tả bài toán: Input, Output
+-Input: số lần mang thai, nồng độ insulin, nồng độ glucagon, chỉ số BMI, mức độ nếp gấp trên da, huyết áp, tuổi
+-Output: bị biểu đường hay không
+
+2. Mô tả về bộ dữ liệu: 
++ cách thức xây dựng bộ dữ liệu (ví dụ có sẵn trên mạng, hoặc tự xây dựng) : chôm trên mạng
++ số lượng, độ đa dạng : 
+
+![met](https://github.com/17521174/CS114.L11.KHCL/blob/master/Screenshots/photo.png)
+
++ các thao tác tiền xử lý dữ liệu 
++ phân chia (split) - train/dev/test
+
+3. Mô tả về đặc trưng
++ feature engineering
+
+4. Mô tả về thuật toán máy học
+(dự kiến)
+5. Cài đặt, tinh chỉnh tham số
+(dự kiến)
+6. Đánh giá kết quả, kết luận
+(dự kiến)
