@@ -1,0 +1,62 @@
+def read(str='i'): 
+    if(str == "float"):  
+        return map(float, input().split())
+    return map(int, input().split())  
+
+
+def ReadArr():
+    return [(x) for x in input().split()]
+
+
+D = {'lios': 1, 'etr': 2, 'initis': 3, 'liala': -1, 'etra': -2, 'inites': -3}
+
+
+def getType(w):
+    if w[-4:] in D:
+        return D[w[-4:]]
+
+    if w[-3:] in D:
+        return D[w[-3:]]
+
+    if w[-5:] in D:
+        return D[w[-5:]]
+
+    if w[-6:] in D:
+        return D[w[-6:]]
+
+    return 0
+
+
+def initArr(S):
+    S = [getType(x) for x in S]
+    return S
+
+
+def solve(S):
+    if len(S) == 1:
+        if S[0] == 0:
+            return 'NO'
+        return 'YES'
+
+    for i in range(len(S)):
+        if S[i]*S[0] < 0:
+            print(S[i], S[0])
+            return 'NO'
+    for i in range(len(S)):
+        S[i] = abs(S[i])
+    count2 = 0
+    newS = sorted(S)
+    for i in range(len(S)):
+        if newS[i] == 2:
+            count2 += 1
+        if count2 > 1 or newS[i] != S[i]:
+            return 'NO'
+    if count2 == 0:
+        return 'NO'
+    return 'YES'
+
+
+if _name_ == '_main_':
+    S = ReadArr()
+    S = initArr(S)
+    print(solve(S))
