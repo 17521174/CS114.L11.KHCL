@@ -1,0 +1,14 @@
+n = int(input())
+s = input()
+dem = 0
+for i in range(len(s)):
+  if s[i] == '8':
+    dem = dem + 1
+if dem >= int(n/11):
+  print(int(n/11))
+elif dem < int(n/11):
+  print(dem)
+elif n % 11 != 0:
+  print(0)
+else:
+  print(0)
