@@ -1,0 +1,15 @@
+n, m = map(int, input().split())
+
+tp = n
+x = 0
+y = 1
+while tp > 0:
+    x = (m % 10)*y + x
+    m = int(m / 10)
+    tp = int(tp / 10)
+    y = y * 10
+    
+
+if (x >= n):
+    m += 1
+print(m)
