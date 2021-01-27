@@ -6,7 +6,7 @@
 + cách thức xây dựng bộ dữ liệu (ví dụ có sẵn trên mạng, hoặc tự xây dựng) : tự xây dựng, nghe bài nào có bao nhiêu input thì tìm đủ 
 + số lượng, độ đa dạng : chừng nào hết nhạc là hết tìm
 + các thao tác tiền xử lý dữ liệu 
-+ phân chia (split) - train/dev/test : chắc chia 6/4
++ phân chia (split) - train/dev/test : tỉ lệ 8/2
 
 3. Mô tả về đặc trưng
 + feature engineering
